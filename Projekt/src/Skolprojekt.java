@@ -73,20 +73,16 @@ public class Skolprojekt extends javax.swing.JFrame {
             }
         });
 
-        jLabel1.setFont(new java.awt.Font("Comic Sans MS", 1, 12)); // NOI18N
         jLabel1.setText("Välj Sten, Sax eller Påse genom att trycka på motsvarande bild ");
 
         jScrollPane1.setViewportView(txfResultat);
 
         jScrollPane2.setViewportView(txfDatornsval);
 
-        jLabel3.setFont(new java.awt.Font("Comic Sans MS", 1, 12)); // NOI18N
         jLabel3.setText("Datorn Valde:");
 
-        jLabel4.setFont(new java.awt.Font("Comic Sans MS", 1, 12)); // NOI18N
         jLabel4.setText("Resultat:");
 
-        jLabel5.setFont(new java.awt.Font("Comic Sans MS", 1, 12)); // NOI18N
         jLabel5.setText("Du valde:");
 
         jScrollPane3.setViewportView(txfDittVal);
@@ -129,10 +125,10 @@ public class Skolprojekt extends javax.swing.JFrame {
                     .addComponent(btnSax, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(btwPase, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 36, Short.MAX_VALUE)
-                .addGroup(pnlStenSaxPaseLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel5))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(pnlStenSaxPaseLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jScrollPane3, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel5, javax.swing.GroupLayout.Alignment.TRAILING))
+                .addGap(18, 18, 18)
                 .addGroup(pnlStenSaxPaseLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(pnlStenSaxPaseLayout.createSequentialGroup()
                         .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -145,10 +141,8 @@ public class Skolprojekt extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        jLabel2.setFont(new java.awt.Font("Comic Sans MS", 1, 12)); // NOI18N
         jLabel2.setText("Sten, Sax, Påse");
 
-        btnRestart.setFont(new java.awt.Font("Comic Sans MS", 1, 12)); // NOI18N
         btnRestart.setText("Börja om");
         btnRestart.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -170,7 +164,7 @@ public class Skolprojekt extends javax.swing.JFrame {
                     .addGroup(layout.createSequentialGroup()
                         .addContainerGap()
                         .addComponent(jLabel2)))
-                .addContainerGap(333, Short.MAX_VALUE))
+                .addContainerGap(334, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -181,7 +175,7 @@ public class Skolprojekt extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(pnlStenSaxPase, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(btnRestart))
-                .addContainerGap(105, Short.MAX_VALUE))
+                .addContainerGap(95, Short.MAX_VALUE))
         );
 
         pack();
@@ -228,18 +222,14 @@ public class Skolprojekt extends javax.swing.JFrame {
         {
             txfResultat.setText("Oavgjort");
         }
-       
         else if (datornsVal.equals("Sax"))
         {
             txfResultat.setText("Du vann");
         }
-        else if (datornsVal.equals("Påse"))
+        else
         {
             txfResultat.setText("Du förlorade");
         }
-        
-        
-        
     }//GEN-LAST:event_btnStenMouseClicked
 
     private void btnSaxMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnSaxMouseClicked
@@ -283,7 +273,7 @@ public class Skolprojekt extends javax.swing.JFrame {
         {
             txfResultat.setText("Oavgjort");
         }
-        else if (datornsVal.equals("Påse"))
+        else
         {
             txfResultat.setText("Du vann");
         }
@@ -330,15 +320,22 @@ public class Skolprojekt extends javax.swing.JFrame {
         {
             txfResultat.setText("Du förlorade");
         }
-        else if (datornsVal.equals("Påse"))
+        else
         {
             txfResultat.setText("Oavgjort");
         }
-        
     }//GEN-LAST:event_btwPaseMouseClicked
 
     private void btnRestartActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRestartActionPerformed
-        // TODO add your handling code here:
+        //Startar om spelet
+        
+        
+        
+        
+        
+        
+        
+        
     }//GEN-LAST:event_btnRestartActionPerformed
 
     /**
